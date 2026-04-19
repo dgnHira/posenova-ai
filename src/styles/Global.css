@@ -1,0 +1,93 @@
+/* Global.css - Global resets and base layout */
+@import './Theme.css';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Tüm web sitesindeki fare imlecini SİMLİ bir yıldıza (✨) dönüştürür */
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><text y='24' font-size='24'>✨</text></svg>") 16 16, auto;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+a, button, .glass-card, img {
+  /* Tıklanabilir şeyler için de aynı simli imleç fakat tıklandığını belli etmek için ortalanmış */
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><text y='24' font-size='24'>🌟</text></svg>") 16 16, pointer !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Glassmorphism Utility Classes */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Glitter (Simli) Efekti */
+@keyframes glitterBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes sparkleDots {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+  50% { opacity: 0.2; }
+  100% { transform: translateY(-50px) rotate(45deg); opacity: 0.8; }
+}
+
+.glitter-btn {
+  background: linear-gradient(270deg, #7209b7, #4cc9f0, #ff0a54, #7209b7);
+  background-size: 300% 300%;
+  animation: glitterBG 3s ease infinite;
+  box-shadow: 0 0 25px rgba(247, 37, 133, 0.5), inset 0 0 10px rgba(255,255,255,0.4);
+  position: relative;
+  overflow: hidden;
+  color: white !important;
+}
+
+.glitter-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 10%, transparent 20%);
+  background-size: 15px 15px; /* Sim noktaları */
+  animation: sparkleDots 2s linear infinite;
+  pointer-events: none;
+  opacity: 0.6;
+}

@@ -1,0 +1,32 @@
+/* Theme.css - Color palette and CSS Variables */
+
+:root {
+  /* Extremely Vibrant Neon & Pastel Colors */
+  --color-pink-soft: #ff6b9e;
+  --color-pink-vibrant: #ff0a54;
+  --color-blue-soft: #4cc9f0;
+  --color-blue-vibrant: #4361ee;
+  --color-green-soft: #2d6a4f;
+  --color-green-vibrant: #06d6a0;
+  --color-lavender-soft: #b088f9;
+  --color-lavender-vibrant: #7209b7;
+  --color-yellow-vibrant: #fca311;
+  --color-orange-vibrant: #f72585;
+  
+  --bg-gradient: linear-gradient(135deg, #7209b7 0%, #4361ee 50%, #ff0a54 100%);
+  --bg-gradient-dark: linear-gradient(135deg, #3a0ca3 0%, #3f37c9 50%, #f72585 100%);
+  
+  /* Text */
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-light: #ffffff;
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  
+  /* Spacing */
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
