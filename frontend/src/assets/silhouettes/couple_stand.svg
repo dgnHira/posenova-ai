@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" fill="none">
+  <!-- Person 1: Head -->
+  <circle cx="80" cy="50" r="28" fill="white" fill-opacity="0.9"/>
+  <!-- Person 1: Torso -->
+  <path d="M46 78 Q80 70 114 78 L120 200 Q80 210 40 200 Z" fill="white" fill-opacity="0.85"/>
+  <!-- Person 1: Left Arm -->
+  <path d="M48 86 Q22 120 18 158" stroke="white" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <!-- Person 1: Right Arm reaching toward P2 -->
+  <path d="M112 86 Q138 110 152 130" stroke="white" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <!-- Person 1: Legs -->
+  <path d="M65 198 Q58 268 54 330" stroke="white" stroke-opacity="0.9" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <path d="M95 198 Q102 268 106 330" stroke="white" stroke-opacity="0.9" stroke-width="18" stroke-linecap="round" fill="none"/>
+
+  <!-- Person 2: Head -->
+  <circle cx="220" cy="50" r="28" fill="white" fill-opacity="0.9"/>
+  <!-- Person 2: Torso -->
+  <path d="M186 78 Q220 70 254 78 L260 200 Q220 210 180 200 Z" fill="white" fill-opacity="0.85"/>
+  <!-- Person 2: Left Arm reaching toward P1 -->
+  <path d="M188 86 Q162 110 148 130" stroke="white" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <!-- Person 2: Right Arm -->
+  <path d="M252 86 Q278 120 282 158" stroke="white" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <!-- Person 2: Legs -->
+  <path d="M205 198 Q198 268 194 330" stroke="white" stroke-opacity="0.9" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <path d="M235 198 Q242 268 246 330" stroke="white" stroke-opacity="0.9" stroke-width="18" stroke-linecap="round" fill="none"/>
+
+  <!-- Joined Hands in Middle -->
+  <circle cx="150" cy="135" r="10" fill="white" fill-opacity="0.9"/>
+</svg>

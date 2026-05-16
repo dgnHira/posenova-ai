@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400" fill="none">
+  <!-- Head -->
+  <circle cx="100" cy="48" r="30" fill="white" fill-opacity="0.9"/>
+  <!-- Torso - leaning/casual -->
+  <path d="M64 76 Q100 68 136 76 L130 190 Q100 198 70 190 Z" fill="white" fill-opacity="0.85"/>
+  <!-- Left Arm - raised up -->
+  <path d="M66 84 Q40 56 34 30" stroke="white" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <!-- Right Arm - hand on hip -->
+  <path d="M130 86 Q154 110 156 140" stroke="white" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <!-- Left Leg - straight -->
+  <path d="M84 188 Q78 258 76 330" stroke="white" stroke-opacity="0.9" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <!-- Right Leg - crossed/dynamic -->
+  <path d="M116 188 Q128 240 118 310 Q112 340 108 360" stroke="white" stroke-opacity="0.9" stroke-width="18" stroke-linecap="round" fill="none"/>
+</svg>

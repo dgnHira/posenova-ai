@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>PoseGuide — Pinterest Poz Rehberi</title>
+  <meta name="description" content="PoseGuide ile mükemmel fotoğraf pozunu bul! Pinterest estetiğinde poz filtreleme, kamera üzerinde silüet rehberi." />
+  <meta name="keywords" content="poz, fotoğraf, silüet, kamera, pinterest, pose guide" />
+  <meta name="author" content="PoseGuide" />
+  <meta property="og:title" content="PoseGuide — Mükemmel Poz Rehberin" />
+  <meta property="og:description" content="Pinterest'ten ilham al, kamera rehberiyle mükemmel pozu yakala." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (emoji tabanlı SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>" />
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="./src/styles/index.css" />
+
+  <!-- Ripple animasyonu (Button.js için) -->
+  <style>
+    @keyframes ripple {
+      to { transform: scale(3); opacity: 0; }
+    }
+    /* Mobil responsive ızgara düzeltmesi */
+    @media (max-width: 768px) {
+      #page-kamera .page-content > div[style*="grid-template-columns:1fr 280px"] {
+        grid-template-columns: 1fr !important;
+      }
+      #page-giris > div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Uygulama kök noktası -->
+  <div id="root"></div>
+
+  <!-- ES Module girişi -->
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
